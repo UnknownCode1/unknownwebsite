@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Playing Site</title>
+</head>
+<body>
+  <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+
+          header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+          }
+
+          nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+
+          nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+          }
+
+          nav ul li a {
+            color: #fff;
+            text-decoration: none;
+          }
+
+          section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+          }
+
+          #video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+          }
+
+          #my-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+          footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+          }
+</style>
+
+
+
+	<section>
+		<div id="video-container">
+			<video id="my-video" controls>
+				<source src="D:\SHIVA PRASAD\Videos\www.1TamilMV.fans - K.G.F Chapter 2 (2022) Telugu (Org Vers) TRUE WEB-DL - 1080p - AVC - UNTOUCHED - (DD+5.1 - 640Kbps & AAC 2.0) - 11.9GB - ESub.mkv" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+	</section>
+
+  <script>
+    // Add event listener to the video player
+    const video = document.getElementById("my-video");
+    video.addEventListener("click", togglePlay);
+    
+    // Play/pause the video
+    function togglePlay() {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+    
+    </script>
+</body>
+</html>
